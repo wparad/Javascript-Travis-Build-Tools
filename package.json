@@ -10,10 +10,11 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Create a test to go here.\" && exit 0"
   },
   "devDependencies": {
-    "commander": "^2.5.0"
+    "commander": "^2.5.0",
+    "underscore": "^1.8.3"
   },
   "repository": {
     "type": "git",
