@@ -8,11 +8,9 @@ Node NPM Travis build tools library.
 ### Usage
 
 * Get Node:
-	
-	curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
-	apt-get install nodejs
-
-	npm install travis-build-tools 
+	* `curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -`
+	* `apt-get install nodejs`
+	* `npm install travis-build-tools`
 
 
 Update .travis.yml keys

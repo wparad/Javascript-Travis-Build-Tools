@@ -2,15 +2,18 @@
   "name": "travis-build-tools",
   "version": "0.0.0",
   "description": "Travis Build tools is used to manage building Travis CI nodejs projects.",
-  "main": "index.js",
+  "main": "lib/travis.js",
   "files": [
     "LICENSE",
     "CHANGELOG.md",
     "README.md",
-    "index.js"
+    "lib"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "commander": "^2.5.0"
   },
   "repository": {
     "type": "git",
