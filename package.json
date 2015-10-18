@@ -1,0 +1,30 @@
+{
+  "name": "travis-build-tools",
+  "version": "0.0.0",
+  "description": "Travis Build tools is used to manage building Travis CI nodejs projects.",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "CHANGELOG.md",
+    "README.md",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wparad/Javascript-Travis-Build-Tools.git"
+  },
+  "keywords": [
+    "Travis-CI",
+    "package creation",
+    "microservice"
+  ],
+  "author": "Warren Parad <wparad@gmail.com> (http://wparad.github.io)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/wparad/Javascript-Travis-Build-Tools/issues"
+  },
+  "homepage": "https://github.com/wparad/Javascript-Travis-Build-Tools#readme"
+}
