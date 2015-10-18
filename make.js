@@ -15,9 +15,10 @@ console.log(version);
  */
 var commander = require('commander');
 var package_metadata = require('./package.json');
-var travis = package_metadata.name == 'travis-build-tools' ? require('./lib/travis.js') : require('travis-build-tools');
+var Travis = package_metadata.name == 'travis-build-tools' ? require('./') : require('travis-build-tools');
 
 commander.version(package_metadata.version);
+console.log(new Travis().GetBuildNumber());
 
 /**
  * Build
