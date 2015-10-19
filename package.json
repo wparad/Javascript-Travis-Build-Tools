@@ -10,11 +10,13 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Create a test to go here.\" && exit 0"
+    "test": "mocha test -R spec"
   },
   "devDependencies": {
     "commander": "^2.5.0",
-    "underscore": "^1.8.3"
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5",
+    "sinon": "^1.17.1"
   },
   "repository": {
     "type": "git",

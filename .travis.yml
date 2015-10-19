@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - '4.1'
-script:
+before_script:
 - node make.js build
 before_deploy:
 - node make.js after_build
