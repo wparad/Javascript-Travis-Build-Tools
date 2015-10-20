@@ -16,9 +16,9 @@ console.log(version);
 var commander = require('commander');
 var fs = require('fs');
 var package_metadata = require('./package.json');
-var Travis = package_metadata.name == 'travis-build-tools' ? require('./') : require('travis-build-tools');
+var TravisBuildTools = (package_metadata.name == 'travis-build-tools' ? require('./') : require('travis-build-tools'));
 
-var travis = new Travis();
+var travis = new TravisBuildTools(undefined);
 var version = travis.GetVersion();
 commander.version(version);
 
@@ -47,6 +47,8 @@ commander
 	.action(function() {
 		console.log("After build package %s (%s)", package_metadata.name, version);
 		console.log('');
+		travis.PublishGitTag();
+
 	});
 
 commander.parse(process.argv);

@@ -2,7 +2,7 @@
   "name": "travis-build-tools",
   "version": "0.0.0",
   "description": "Travis Build tools is used to manage building Travis CI nodejs projects.",
-  "main": "lib/travis.js",
+  "main": "lib/travis-build-tools.js",
   "files": [
     "LICENSE",
     "CHANGELOG.md",
