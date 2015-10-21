@@ -18,7 +18,7 @@ var fs = require('fs');
 var package_metadata = require('./package.json');
 var TravisBuildTools = (package_metadata.name == 'travis-build-tools' ? require('./') : require('travis-build-tools'));
 
-var travis = new TravisBuildTools(undefined);
+var travis = new TravisBuildTools(process.env.GIT_TAG_PUSHER);
 var version = travis.GetVersion();
 commander.version(version);
 
@@ -48,7 +48,7 @@ commander
 		console.log("After build package %s (%s)", package_metadata.name, version);
 		console.log('');
 		travis.PublishGitTag();
-
+		travis.MergeDownstream('release/', 'master');
 	});
 
 commander.parse(process.argv);
