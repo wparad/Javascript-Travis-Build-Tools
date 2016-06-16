@@ -5,6 +5,23 @@ Node NPM Travis build tools library.
 
 ### Usage
 
+```javascript
+var travis = require('travis-build-tools')(process.env.GIT_TAG_PUSHER);
+
+//Get the current version based on the branch name:
+var version = travis.GetVersion();
+
+//Automatically publish a tag with the current version to the git repository.
+travis.PublishGitTag();
+
+//Or
+travis.PublishGitTag('tag-name.1.0.0-sha1');
+
+//Automatically merge downstream branches (`release/*` or `master`) if the current branch is `release`.
+travis.MergeDownstream('release/', 'master');
+```
+
+### Development
 * Get Node:
 	* `curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -`
 	* `apt-get install nodejs`
