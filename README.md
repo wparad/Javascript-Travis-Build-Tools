@@ -1,9 +1,7 @@
 # Travis Build Tools
 Node NPM Travis build tools library.
 
-[![npm version](https://badge.fury.io/js/travis-build-tools.svg)](https://badge.fury.io/js/travis-build-tools)
-
-[![Build Status](https://travis-ci.org/wparad/Javascript-Travis-Build-Tools.svg?branch=master)](https://travis-ci.org/wparad/Javascript-Travis-Build-Tools)
+[![npm version](https://badge.fury.io/js/travis-build-tools.svg)](https://badge.fury.io/js/travis-build-tools) [![Build Status](https://travis-ci.org/wparad/Javascript-Travis-Build-Tools.svg?branch=master)](https://travis-ci.org/wparad/Javascript-Travis-Build-Tools)
 
 ### Usage
 
